@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pesquise Aqui - Onde Não Trabalhar</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <script>
+        var quebrada = false;
+                function mudaLampada(tipo) {
+                if (tipo === 1){
+                    arquivo = "imagens/ybxlO.jpg";
+                }
+                if (tipo === 2){
+                    arquivo = "imagens/b983w.jpg";
+                }
+                if (tipo === 3){
+                    arquivo = "imagens/MRjsF.jpg";  
+                }
+                if (!quebrada){
+                document.getElementById("luz").src= arquivo;
+                if (tipo === 3)
+                    quebrada = true;
+                }
+                }
+            </script>
+    
+    </head>
+    
+    <body>
+        
+            <h1>Acenda a lâmpada</h1>
+            <figure>
+                <img src="imagens/b983w.jpg" id="luz" onmousemove="mudaLampada (1)" onmouseout="mudaLampada(2)" onclick="mudaLampada(3)">
+         </figure>
+        
+    </body>
+</html>

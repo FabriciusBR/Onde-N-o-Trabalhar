@@ -1,0 +1,271 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10/03/2019, 10:47:56
+    Author     : Fabricio
+*/
+@charset "UTF-8";
+@font-face{
+    font-family:"Fontelogo"; 
+    src: url("Fontes/japan.ttf");
+}
+@font-face{
+    font-family:"fonteparagrafo";
+    src: url("Fontes/BIOST.ttf");    
+}
+ /*h1{
+                
+                font-size: 50pt;
+                color: grey;
+                text-shadow: 6px 3px 6px black;
+                
+            
+ }*/
+            /* formatação de paragrafo*/
+            p{
+                font-family:"fonteparagrafo", sans-serif;
+                text-align: justify;
+                text-indent: 50px;
+            }
+            /*formatação fundo do corpo*/
+            body{
+                
+                    
+                background-image: url("imagens/fundo.jpg");
+                
+               
+            }
+            /*formatação da tabela*/
+            table#tabela1{
+                border: 1px solid #606060;
+                border-spacing: 0px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            table#tabela1 td{
+                border: 1px solid #606060;
+                padding: 10px;
+                text-align: left;
+                vertical-align: middle;
+            }
+            table#tabela1 td.ce{
+                color: #ffffff;
+                background-color: #606060;
+                vertical-align: top;
+                font-weight: bold;
+            }
+            table#tabela1 td.cd{
+                background-color: #cecece;
+                
+            }
+            table#tabela1 caption{
+                color: white;
+                font-size:16pt;
+                font-weight: bolder;
+            }
+            
+            /*Formatação Cabeçalho*/
+            header#cabecalho{
+              border-bottom: 10px groove;
+              height: 200px;
+              background: url("imagens/2.png")no-repeat -20px 50px;
+            }
+            header#cabecalho h1{
+             font-family:"Fontelogo", sans-serif;
+             font-size: 60pt;
+             color: whitesmoke;
+             text-shadow: 5px 5px 5px rgba(0,0,0,.6);
+             padding: 0px;
+             margin-bottom: 0%;
+             margin-top: 7%;
+            }
+            header#cabecalho h2{
+             font-family:"Fontelogo", sans-serif;
+             font-size: 30pt;
+             color: whitesmoke;
+             text-shadow: 5px 5px 5px rgba(0,0,0,.6); 
+             padding: 0px;
+             margin-top:0px;
+            }
+            
+            div#tema{
+                 width:100%;
+                 height:210px;
+                 margin: 0 auto;
+            }
+            /*formatação divisão interface*/
+        
+            div#interface{
+                width:100%;
+                height: 90%;
+                margin: 0 auto;
+                background: aquamarine;
+            }
+            /*formatação de imagem com legendas*/
+            figure.foto-legenda{
+                position: relative;
+                border: 20px solid blue;
+                box-shadow: 5px 5px 5px white;
+                width: 50%;   
+            }
+            figure.foto-legenda img{
+             width:  100%;
+             height: 100%;
+            }
+            figure.foto-legenda figcaption{
+               opacity: 0;
+               position: absolute;
+               top: 0px;
+               background-color: rgba(0,0,0,.4);
+               color: white;
+               width: 100%;
+               height: 100%;
+               padding: 10px;
+               box-sizing: border-box;
+               transition: opacity 1s;
+               
+            }
+            Figure.foto-legenda:hover figcaption{
+                opacity: 1;
+            }
+            /* Formatação do menu*/
+            nav#menu{
+                display: block; 
+            }
+            nav#menu ul{
+                color: paleturquoise;
+                list-style: none;
+                text-transform: uppercase;
+                position: absolute;
+                top: -17px;
+                left: 1px;
+                
+            }
+            nav#menu li{
+                display: inline-block;
+                background-color: #dddddd;
+                padding: 10px;
+                margin: 1px;
+                transition: background-color 1s;
+            }
+            nav#menu li:hover{
+                background-color: #606060;
+            }
+            nav#menu h2{
+                display: none;
+            }
+            nav#menu a{
+                color:black;
+                text-decoration: none;
+            }
+            nav#menu a:hover{
+              color:  #ffffff;
+              text-decoration: underline;
+            }
+            /*divisão do corpo*/
+            section#corpo{
+             display: block; 
+             width:50%;
+             float: left;
+             border-right: 5px solid #606060;
+             padding: 15px;
+             
+            }
+            aside#lateral{
+                margin-top:1%;
+                display: block;
+                width: 45%;
+                float: right;
+                background-color:graytext;
+            }
+            footer#rodape{
+                clear: both;
+                border-top: 5px solid #606060;
+            }
+            footer#rodape p{
+                text-align: center;
+            }
+            /*configurando noticias*/
+            article#noticiaprincipal h1{
+                 font-family:"Fontelogo", sans-serif;
+                 font-size: 25pt;
+                 color: white;
+                 background-color: gray;
+                 padding: 2%;
+                 margin: 10px 0px 10px 0px;                
+            }
+            header#autor h2{
+                text-align: right;
+                margin-right: 10px;
+                font-family:"Fontelogo", sans-serif;
+                font-size: 20pt;
+                color: white;
+                margin-bottom: 0px;
+                margin-top: 0px;              
+            }
+            header#autor h3{
+                font-family:"Fontelogo", sans-serif;
+                text-align: right;
+                margin-right: 10px;
+                font-size: 15pt;
+                color: white;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+            
+             article#noticiasecundaria h1{
+                 font-family: "Fontelogo", sans-serif;
+                 font-size: 25pt;
+                 color: white;
+                 background-color: gray;
+                 padding: 2%;
+                 margin:10px 10px 10px 0px;                
+            }
+            article#noticiasecundaria p{
+                width:98%; 
+                text-align: justify;
+                text-indent: 50px;  
+            }
+            
+            
+            /*pagina Matérias*/
+            
+            body#materiacorpo{
+                margin: 10%;               
+            }
+            
+            div#materia {
+                text-align: center;
+            }
+            
+            article#artigosantigos h1{
+                 font-family:"Fontelogo", sans-serif;
+                 font-size: 25pt;
+                 color: white;
+                 background-color: gray;
+                 padding: 2%;
+                 margin: 10px 0px 10px 0px;                
+            }
+            header#autor h2{
+                text-align: right;
+                margin-right: 10px;
+                font-family:"Fontelogo", sans-serif;
+                font-size: 20pt;
+                color: white;
+                margin-bottom: 0px;
+                margin-top: 0px;              
+            }
+            header#autor h3{
+                font-family:"Fontelogo", sans-serif;
+                text-align: right;
+                margin-right: 10px;
+                font-size: 15pt;
+                color: white;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+
